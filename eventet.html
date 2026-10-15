@@ -109,6 +109,38 @@
                 <p>Windows Day is the best day ever.</p>
             </article>
         </section>
+
+        <section>
+            <h2>Join event</h2>
+            <form>
+                <div>
+                    <label for="name">Full name:</label>
+                    <input type="text" name="name" id="name" required minlength="3">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div>
+                    <label for="subject">Subject:</label>
+                    <select name="subject" id="subject">
+                        <option value="">Select a subject</option>
+                        <option value="events">Events</option>
+                        <option value="clubs">Clubs</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <div>
+                        <label for="message">Message: </label>
+                        <textarea name="message" id="message" required minlength="10"></textarea>
+                    </div>
+                    <input type="checkbox" id="updates" name="updates">
+                    <label for="updates">Deshiroj te marre njoftime per ngjarjet e ardhshme</label>
+                    <div>
+                        <button type="submit">Submit: </button>
+                    </div>
+                </div>
+            </form>
+        </section>
     </main>
 
     <footer>

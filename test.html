@@ -3,84 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CampusHub</title>
+    <title>Events | CampusHub</title>
 </head>
 <body>
-    <p><strong>Regjistrimi mbyllet te premten</strong></p>
-    <p>Ju lutemi paraqituni <em>para ores 10</em></p>
+    <p><strong>Regjistrimi mbyllet te premten.</strong></p>
+    <p>Ju lutem paraqiteni <em>para ores 10.</em></p>
     <p>Kategoria: <b>Workshop</b></p>
-    <p>Termi: <i>frontend</i> i referohet pjeses se aplikacionit me te cilin ndervepron perdoruesi.</p>
-    <p>Hyrja ne event eshte <mark>falas per studentet</mark></p>
-    <p><small>Numri i vendeve eshte i kufizuar</small></p>
-    <p>Qmimi i meparshem: <del>$10</del></p>
-    <p>Qmimi aktual: <ins>Hyrja falas</ins></p>
+    <p>Termi <i>frontend</i> i referohet pjeses...</p>
+    <p>Hyrja ne event eshte <mark>falas per studentet.</mark></p>
+    <p><small>Numri i vendeve eshte i limituar.</small></p>
+    <p>Cmimi i meparshem: <del>10$</del></p>
+    <p>Cmimi aktual: <ins>Falas</ins></p>
     <p>Siperfaqja: 25m<sup>2</sup></p>
     <p>Formula kimike e ujit: H<sub>2</sub>O</p>
+    <p>Fakulteti i Inxhinierise Elektrike dhe Kompjuterike <br>Qyteti: Prishtine</p>
     <hr>
-    <p>Fakulteti i Inxhinierise Elektrike dhe Komjuterike<br>
-    Ndertesa A<br>
-    Prishtine
-    </p>
-    <form>
-        <!--Fushat e formules vendosen ketu.-->
-    </form>
-         
-    <form>
-        <label for="full-name">
-            Emri dhe mbiemri:
-        </label>
-        <input type="text" id="full-name" name ="full-name" required>
-        
-        <!-- Teksti -->
-         <label for="name">Emri: </label>
-         <input type="text" id="name" name ="name">
+    <form action="">
+        <label for="name">Emri dhe Mbiemri:</label>
+        <input type="text" id="name" name="name" placeholder="Shkruaj ketu" required minlength="3" maxlength="13"><br>
+        <label for="email">Emaili:</label>
+        <input type="email" name="email" id="email" required><br>
+        <label for="participants">Numri i participants:</label>
+        <input type="number" name="participants" id="participants" max="100" min="1"><br>
+        <label for="date">Data:</label>
+        <input type="date" name="data" id="date"><br>
+        <label for="phone">Numri i tel:</label>
+        <input type="tel" id="phone" name="telefoni"><br>
+        <label for="password">Passwordi:</label>
+        <input type="password" name="password" id="password"><br>
 
-         <!-- Teksti -->
-         <label for="email">Email: </label>
-         <input type="email" id="email" name ="email" required>
+ <!-- radio -->
+        <p>Statusi i studentit</p>
+        <input type="radio" name="student-status" id="current-student">
+        <label for="current-student">Studenti aktual</label>
+        <input type="radio" name="student-status" id="graduate">
+        <label for="graduate">I diplomuar</label><br>
 
-         <!-- Teksti -->
-         <label for="participants">Numri i pjesemarreseve: </label>
-         <input type="number" id="participants" name ="participants" min="1" max="10">
+ <!-- checkbox -->
+        <input type="checkbox" id="updates" name="updates">
+        <label for="updates">Deshiroj te marre njoftime per ngjarjet e ardhshme</label><br>
+ <!-- textarea -->
+        <label for="message">Mesazhi</label>
+        <textarea name="mesazhi" id="message" rows="3" placeholder="Shkruaj ketu mesazhin"></textarea><br>
 
-         <!-- Teksti -->
-         <label for="event-date">Data e eventit: </label>
-         <input type="date" id="event-date" name ="event-date">
-
-          <!-- Teksti -->
-         <label for="phone">Nr. Tel.: </label>
-         <input type="tel" id="phone" name ="phone">
-
-         <!-- Teksti -->
-         <label for="password">Password: </label>
-         <input type="password" id="password" name ="password">
-
-         <p>Statusi i studentit: </p>
-         <input type="radio" id="current-student" name="student-status">
-         <label for="current-student">Studenti aktual</label>
-
-         <input type="radio" id="graduate" name="student-status">
-         <label for="graduate">I diplomuar</label>
-
-         <input type="checkbox" id="updates" name = "updates">
-         <label for="updates">Deshiroj te marre njoftime per ngjarjet e ardhshme</label>
-
-
-         <label for="message">Mesazhi: </label>
-         <textarea name="message" id="message" rows="5"></textarea>
-
-         <label for="subject">Subject</label>
-         <select name="subject" id="subject">
+ <!-- ddlist -->
+        <label for="ddlist">Tema</label>
+        <select name="Subject" id="ddlist">
             <option value="">Zgjedh temen</option>
             <option value="events">Eventet</option>
-            <option value="clubs">Clubs</option>
-            <option value="other">Te tjera</option>
+            <option value="clubs">Klube</option>
+            <option value="others">Tjera</option>
+        </select><br>
 
-         </select>
+ <!-- button -->
+        <button type="submit">Dergo</button>
+    </form>
 
-         <button type="submit">Dergo mesazhin</button>
-    
-    
-        </form>
+
 </body>
 </html>

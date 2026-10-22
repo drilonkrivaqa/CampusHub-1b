@@ -31,11 +31,6 @@ main {
     padding: 24px;
 }
 
-h2 {
-    color: #1d4ed8;
-    font-size: 26px;
-}
-
 .event-card,
 .club-card {
     background-color: white;
@@ -54,4 +49,18 @@ footer {
     color: white;
     padding: 16px;
     text-align: center;
+}
+h1 {
+    font-size: 36px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 26px;
+    margin-bottom: 16px;
+}
+
+h3 {
+    font-size: 20px;
+    color: #172554;
 }
